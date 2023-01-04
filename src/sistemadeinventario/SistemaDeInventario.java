@@ -37,10 +37,32 @@ public class SistemaDeInventario {
             
             
         } else {
+            menuUsuario();
 
         }
     }
 
+    
+    private void menuUsuario() throws IOException {
+        System.out.println("Elija desea realizar: ");
+        System.out.println("1) Elegir productos y la cantidad de estos");
+        System.out.println("2) Mostrar la orden");
+        System.out.println("3) Modificar la orden");
+        System.out.println("4) Terminar orden ");
+       
+        String opcionAdmin = reader.readLine();
+        if ("1".equals(opcionAdmin)) {
+            
+        } else if ("2".equals(opcionAdmin)) {
+            
+        } else if ("3".equals(opcionAdmin)) {
+           
+        }
+          else if("4".equals(opcionAdmin)){           
+        }
+          
+    }
+    
     private void comprobarcontrasenna() throws IOException{   
         System.out.println("ingrese la contraseña de administrador");
             String Contraseña = reader.readLine();
