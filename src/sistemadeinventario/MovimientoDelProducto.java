@@ -10,13 +10,13 @@ package sistemadeinventario;
  */
 public class MovimientoDelProducto {
     private Producto Productos;
-    private Localizacion Loc;
+    private String Direccion;
     private int Cantidad;
     private String Fecha;
 
-    public MovimientoDelProducto(Producto Productos, Localizacion Loc, int Cantidad, String Fecha) {
+    public MovimientoDelProducto(Producto Productos, String Direccion, int Cantidad, String Fecha) {
         this.Productos = Productos;
-        this.Loc = Loc;
+        this.Direccion = Direccion;
         this.Cantidad = Cantidad;
         this.Fecha = Fecha;
     }
@@ -29,12 +29,12 @@ public class MovimientoDelProducto {
         this.Productos = Productos;
     }
 
-    public Localizacion getLoc() {
-        return Loc;
+    public String getDireccion() {
+        return Direccion;
     }
 
-    public void setLoc(Localizacion Loc) {
-        this.Loc = Loc;
+    public void setDireccion(String Direccion) {
+        this.Direccion = Direccion;
     }
 
     public int getCantidad() {
